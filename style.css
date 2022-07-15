@@ -1,5 +1,91 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #D4E6FE;
+}
+
+main{
+    display: grid;
+    padding: 0 40px 0 40px;
+    margin-left: 50%;
+    margin-top: 40px;
+    transform: translateX(-50%);
+    gap:10px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 500px;
+    height: max-content;
+    background-color: #FDFEFF;
+    box-shadow: 1px 1px 10px rgba(145, 145, 145, 0.559);
+}
+main button{
+    margin-top: 5px;
+    justify-self: center;
+    width: 130px;
+    height: 40px;
+    grid-column: span 2;
+    border-radius: 99px;
+    border: none;
+    background-color: #223BF4;
+    color: #fff;
+}
+main .name{
+    background-color: #E7E9FE;
+}
+main .lastname{
+    background-color: #E7E9FE;
+}
+main .email{
+    background-color: #DCE1FF;
+}
+main .phone{
+    background-color: #DCE1FF;
+}
+main .address{
+    background-color: #C7CDFD;
+}
+
+main textarea{
+    min-height: 70px;
+    max-height: 300px;
+    min-width: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+    grid-column: span 2;
+    background-color: #A5B1FD;
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #0019d8;
+    font-weight:1000;
+}
+main .address{
+    grid-column: span 2;
+}
+main h1{
+    font-weight: lighter;
+    grid-column: span 2;
+    color: #0019d8;
+    text-transform: capitalize;
+}
+main input{
+    font-weight:1000;
+    color: #0019d8;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    line-height: 20px;
+}
+main p{
+    margin-bottom: 20px;
+    color: #45e0c4;
+}
+
