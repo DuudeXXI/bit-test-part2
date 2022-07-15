@@ -26,6 +26,7 @@ main{
     box-shadow: 1px 1px 10px rgba(145, 145, 145, 0.559);
 }
 main button{
+    cursor: pointer;
     margin-top: 5px;
     justify-self: center;
     width: 130px;
@@ -65,6 +66,7 @@ main textarea{
     padding-top: 10px;
     color: #0019d8;
     font-weight:1000;
+    resize: none;
 }
 main .address{
     grid-column: span 2;
@@ -87,5 +89,32 @@ main input{
 main p{
     margin-bottom: 20px;
     color: #45e0c4;
+}
+@media(max-width: 740px){
+    main{
+        grid-auto-flow: column;
+        margin-bottom: 30px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: auto;
+
+    }
+    main button{
+        grid-column:  auto;
+    }
+    main .address{
+        grid-column: auto;
+    }
+    main h1{
+        grid-column: auto;
+    }
+    main textarea{
+
+        grid-column: auto;
+    }
+    main input{
+        height: 70px;
+        font-size: 18px;
+    }
 }
 

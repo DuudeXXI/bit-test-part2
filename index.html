@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bit test 2</title>
+    <title>5w task</title>
 </head>
 <body>
     <main class="form">
@@ -16,8 +16,13 @@
         <input class="phone" type="text" placeholder="Phone">
         <input class="address" type="text" placeholder="Address">
         <textarea name="" id="" placeholder="Type your message here"></textarea>
-        <button type="submit">Submit</button>
-        <p>Thanks for submitting!</p>
+        <button type="submit" onclick="submitText()">Submit</button>
+        <p id="submit"></p>
     </main>
+    <script>
+        function submitText() {
+         document.getElementById("submit").innerHTML = "Thanks for submitting!";
+        }
+    </script>
 </body>
 </html>
