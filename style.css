@@ -12,7 +12,7 @@ body{
     background-color: #D4E6FE;
 }
 
-main{
+form{
     display: grid;
     padding: 0 40px 0 40px;
     margin-left: 50%;
@@ -25,7 +25,7 @@ main{
     background-color: #FDFEFF;
     box-shadow: 1px 1px 10px rgba(145, 145, 145, 0.559);
 }
-main button{
+form button{
     cursor: pointer;
     margin-top: 5px;
     justify-self: center;
@@ -37,23 +37,24 @@ main button{
     background-color: #223BF4;
     color: #fff;
 }
-main .name{
+form .name{
     background-color: #E7E9FE;
 }
-main .lastname{
+form .lastname{
     background-color: #E7E9FE;
 }
-main .email{
+form .email{
     background-color: #DCE1FF;
 }
-main .phone{
+form .phone{
     background-color: #DCE1FF;
 }
-main .address{
+form .address{
     background-color: #C7CDFD;
+    grid-column: span 2;
 }
 
-main textarea{
+form textarea{
     min-height: 70px;
     max-height: 300px;
     min-width: calc(100% - 12px);
@@ -68,16 +69,13 @@ main textarea{
     font-weight:1000;
     resize: none;
 }
-main .address{
-    grid-column: span 2;
-}
-main h1{
+form h1{
     font-weight: lighter;
     grid-column: span 2;
     color: #0019d8;
     text-transform: capitalize;
 }
-main input{
+form input{
     font-weight:1000;
     color: #0019d8;
     padding-left: 10px;
@@ -86,12 +84,12 @@ main input{
     height: 40px;
     line-height: 20px;
 }
-main p{
+form p{
     margin-bottom: 20px;
     color: #45e0c4;
 }
 @media(max-width: 740px){
-    main{
+    form{
         grid-auto-flow: column;
         margin-bottom: 30px;
         grid-template-columns: 1fr;
@@ -99,20 +97,20 @@ main p{
         grid-template-columns: auto;
 
     }
-    main button{
+    form button{
         grid-column:  auto;
     }
-    main .address{
+    form .address{
         grid-column: auto;
     }
-    main h1{
+    form h1{
         grid-column: auto;
     }
-    main textarea{
+    form textarea{
 
         grid-column: auto;
     }
-    main input{
+    form input{
         height: 70px;
         font-size: 18px;
     }

@@ -8,21 +8,17 @@
     <title>5w task</title>
 </head>
 <body>
-    <main class="form">
+    <form class="form" onsubmit="return false">
         <h1> get in touch</h1>
-        <input class="name" type="text" placeholder="First Name">
-        <input class="lastname" type="text" placeholder="Last Name">
-        <input class="email" type="text" placeholder="Email">
-        <input class="phone" type="text" placeholder="Phone">
-        <input class="address" type="text" placeholder="Address">
-        <textarea name="" id="" placeholder="Type your message here"></textarea>
-        <button type="submit" onclick="submitText()">Submit</button>
+        <input class="name required" type="text" placeholder="First Name" required>
+        <input class="lastname required" type="text" placeholder="Last Name" required>
+        <input class="email required" type="email" placeholder="Email"required>
+        <input class="phone required" type="text" placeholder="Phone" required>
+        <input class="address required" type="text" placeholder="Address" required>
+        <textarea class="required" placeholder="Type your message here" required></textarea>
+        <button type="submit" onclick = "submitText()">Submit</button>
         <p id="submit"></p>
-    </main>
-    <script>
-        function submitText() {
-         document.getElementById("submit").innerHTML = "Thanks for submitting!";
-        }
-    </script>
+    </form>
+<script src="./form.js" defer></script>
 </body>
 </html>
